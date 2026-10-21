@@ -6,6 +6,7 @@ import { media } from "@/data/media";
 import { company, whatsappLink } from "@/data/company";
 import { Reveal, SectionHeading, useInView } from "@/components/shared/Reveal";
 import { btn } from "@/components/shared/Btn";
+ 
 
 export function CapabilityStrip() {
   const items = ["24/7 Service", "Mombasa Port", "Provisions", "Technical Stores", "Vessel Support"];
