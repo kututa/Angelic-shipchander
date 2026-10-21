@@ -34,7 +34,11 @@ export function Reveal({
 }) {
   const { ref, inView } = useInView<HTMLDivElement>();
   return (
-    <Tag ref={ref} className={`reveal ${inView ? "is-visible" : ""} ${className}`} style={{ transitionDelay: `${delay}ms` }}>
+    <Tag
+      ref={ref}
+      className={`reveal ${inView ? "is-visible" : ""} ${className}`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       {children}
     </Tag>
   );
@@ -58,7 +62,13 @@ export function SectionHeading({
         {eyebrow}
       </p>
       <h2 className="mt-5 text-4xl font-medium uppercase leading-[1.02] md:text-6xl">{title}</h2>
-      {intro && <p className={`mt-6 max-w-xl text-lg leading-relaxed ${tone === "dark" ? "text-marine-foreground/75" : "text-muted-foreground"}`}>{intro}</p>}
+      {intro && (
+        <p
+          className={`mt-6 max-w-xl text-lg leading-relaxed ${tone === "dark" ? "text-marine-foreground/75" : "text-muted-foreground"}`}
+        >
+          {intro}
+        </p>
+      )}
     </div>
   );
 }

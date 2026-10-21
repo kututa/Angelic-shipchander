@@ -38,18 +38,30 @@ export function Footer() {
         </FooterCol>
       </div>
       <div className="container-site flex flex-col gap-2 py-6 text-xs text-marine-foreground/50 md:flex-row md:justify-between">
-        <span>© {new Date().getFullYear()} {company.name}</span>
+        <span>
+          © {new Date().getFullYear()} {company.name}
+        </span>
         <span>{company.poBox}</span>
       </div>
     </footer>
   );
 }
 
-function FooterCol({ title, children, wide }: { title: string; children: React.ReactNode; wide?: boolean }) {
+function FooterCol({
+  title,
+  children,
+  wide,
+}: {
+  title: string;
+  children: React.ReactNode;
+  wide?: boolean;
+}) {
   return (
     <div className={wide ? "md:col-span-3" : "md:col-span-2"}>
       <p className="eyebrow text-marine-foreground/50">{title}</p>
-      <div className="mt-5 flex flex-col gap-3 text-sm text-marine-foreground/80 [&_a:hover]:text-signal">{children}</div>
+      <div className="mt-5 flex flex-col gap-3 text-sm text-marine-foreground/80 [&_a:hover]:text-signal">
+        {children}
+      </div>
     </div>
   );
 }

@@ -7,8 +7,10 @@ export const btn = cva(
       variant: {
         signal: "bg-signal text-signal-foreground hover:brightness-110",
         marine: "bg-marine text-marine-foreground hover:bg-ocean",
-        outlineLight: "border border-marine-foreground/50 text-marine-foreground hover:bg-marine-foreground hover:text-marine",
-        outline: "border border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground hover:text-background",
+        outlineLight:
+          "border border-marine-foreground/50 text-marine-foreground hover:bg-marine-foreground hover:text-marine",
+        outline:
+          "border border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground hover:text-background",
         link: "text-ocean hover:text-signal px-0",
       },
       size: {

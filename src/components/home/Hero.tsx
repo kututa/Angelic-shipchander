@@ -20,7 +20,11 @@ export function Hero() {
   }, [active, cycle, go]);
 
   return (
-    <section aria-roledescription="carousel" aria-label="Angelic Shipchandlers" className="relative h-[100svh] min-h-[640px] overflow-hidden bg-marine text-marine-foreground">
+    <section
+      aria-roledescription="carousel"
+      aria-label="Angelic Shipchandlers"
+      className="relative h-[100svh] min-h-[640px] overflow-hidden bg-marine text-marine-foreground"
+    >
       {heroSlides.map((s, i) => (
         <div
           key={s.src}
@@ -55,11 +59,13 @@ export function Hero() {
           calling <span className="text-signal">Mombasa.</span>
         </h1>
         <p className="mt-6 max-w-md text-base leading-relaxed text-marine-foreground/80 md:text-lg">
-          Provisions, technical stores, marine equipment and vessel support services for ships calling the Port of Mombasa.
+          Provisions, technical stores, marine equipment and vessel support services for ships
+          calling the Port of Mombasa.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link to="/request-vessel-quote" className={btn({ size: "lg" })}>
-            Request a Vessel Quote <span className="transition-transform group-hover:translate-x-1">→</span>
+            Request a Vessel Quote{" "}
+            <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
           <Link to="/services" className={btn({ variant: "outlineLight", size: "lg" })}>
             Explore Services
@@ -79,19 +85,35 @@ export function Hero() {
                 onClick={() => go(i)}
                 className="group flex w-14 flex-col gap-2 py-2 text-left sm:w-24"
               >
-                <span className={`font-display text-xs ${i === active ? "text-marine-foreground" : "text-marine-foreground/45"}`}>0{i + 1}</span>
+                <span
+                  className={`font-display text-xs ${i === active ? "text-marine-foreground" : "text-marine-foreground/45"}`}
+                >
+                  0{i + 1}
+                </span>
                 <span className="relative h-0.5 w-full overflow-hidden bg-marine-foreground/20">
-                  {i === active && <span key={cycle} className="absolute inset-0 bg-signal animate-progress" />}
+                  {i === active && (
+                    <span key={cycle} className="absolute inset-0 bg-signal animate-progress" />
+                  )}
                 </span>
               </button>
             ))}
           </div>
-          <p className="hidden font-display text-xs uppercase tracking-[0.2em] text-marine-foreground/60 md:block">{heroSlides[active]?.caption}</p>
+          <p className="hidden font-display text-xs uppercase tracking-[0.2em] text-marine-foreground/60 md:block">
+            {heroSlides[active]?.caption}
+          </p>
           <div className="flex gap-2">
-            <button aria-label="Previous slide" onClick={() => go(active - 1)} className="grid h-10 w-10 place-items-center border border-line-dark hover:border-signal hover:text-signal">
+            <button
+              aria-label="Previous slide"
+              onClick={() => go(active - 1)}
+              className="grid h-10 w-10 place-items-center border border-line-dark hover:border-signal hover:text-signal"
+            >
               <ChevronLeft size={18} />
             </button>
-            <button aria-label="Next slide" onClick={() => go(active + 1)} className="grid h-10 w-10 place-items-center border border-line-dark hover:border-signal hover:text-signal">
+            <button
+              aria-label="Next slide"
+              onClick={() => go(active + 1)}
+              className="grid h-10 w-10 place-items-center border border-line-dark hover:border-signal hover:text-signal"
+            >
               <ChevronRight size={18} />
             </button>
           </div>

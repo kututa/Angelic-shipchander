@@ -144,15 +144,15 @@ npm run test:watch # Run Vitest in watch mode
 
 ### Website routes
 
-| Path | Page |
-| --- | --- |
-| `/` | Home page and compact supply catalogue |
-| `/about` | Company overview |
-| `/services` | Service listing |
-| `/services/:slug` | Service detail for a known service slug |
-| `/supply-range` | Searchable and filterable supply catalogue |
-| `/contact` | Contact information and contact call to action |
-| `/request-vessel-quote` | Multi-step vessel quote request |
+| Path                    | Page                                           |
+| ----------------------- | ---------------------------------------------- |
+| `/`                     | Home page and compact supply catalogue         |
+| `/about`                | Company overview                               |
+| `/services`             | Service listing                                |
+| `/services/:slug`       | Service detail for a known service slug        |
+| `/supply-range`         | Searchable and filterable supply catalogue     |
+| `/contact`              | Contact information and contact call to action |
+| `/request-vessel-quote` | Multi-step vessel quote request                |
 
 ### API
 

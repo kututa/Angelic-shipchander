@@ -21,6 +21,8 @@ export const nav = [
   { label: "Contact", to: "/contact" },
 ] as const;
 
-export function whatsappLink(message = "Hello Angelic Shipchandlers, I would like to request vessel supply.") {
+export function whatsappLink(
+  message = "Hello Angelic Shipchandlers, I would like to request vessel supply.",
+) {
   return `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(message)}`;
 }

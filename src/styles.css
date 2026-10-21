@@ -111,7 +111,10 @@
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: 0.01em;
   }
@@ -151,16 +154,29 @@
 }
 
 @keyframes kenburns {
-  from { transform: scale(1.02) translateX(0); }
-  to { transform: scale(1.12) translateX(-1.5%); }
+  from {
+    transform: scale(1.02) translateX(0);
+  }
+  to {
+    transform: scale(1.12) translateX(-1.5%);
+  }
 }
 @keyframes progress {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 @keyframes soft-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 oklch(0.68 0.16 50 / 45%); }
-  50% { box-shadow: 0 0 0 10px oklch(0.68 0.16 50 / 0%); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.68 0.16 50 / 45%);
+  }
+  50% {
+    box-shadow: 0 0 0 10px oklch(0.68 0.16 50 / 0%);
+  }
 }
 @utility animate-kenburns {
   animation: kenburns 7s ease-out forwards;
@@ -176,7 +192,9 @@
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 700ms ease, transform 700ms ease;
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
 }
 .reveal.is-visible {
   opacity: 1;
@@ -184,11 +202,16 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .reveal { opacity: 1; transform: none; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -27,12 +27,24 @@ export function Header() {
         overlay ? "bg-transparent" : "border-b border-line-dark bg-marine shadow-soft"
       }`}
     >
-      <div className={`container-site flex items-center justify-between transition-all duration-500 ${scrolled ? "h-16" : "h-20"}`}>
-        <Link to="/" className="flex items-center gap-3 text-marine-foreground" aria-label="Angelic Shipchandlers — home">
-          <span className="grid h-9 w-9 place-items-center border border-signal font-display text-sm font-semibold text-signal">A</span>
+      <div
+        className={`container-site flex items-center justify-between transition-all duration-500 ${scrolled ? "h-16" : "h-20"}`}
+      >
+        <Link
+          to="/"
+          className="flex items-center gap-3 text-marine-foreground"
+          aria-label="Angelic Shipchandlers — home"
+        >
+          <span className="grid h-9 w-9 place-items-center border border-signal font-display text-sm font-semibold text-signal">
+            A
+          </span>
           <span className="leading-none">
-            <span className="block font-display text-sm font-semibold uppercase tracking-[0.2em]">Angelic</span>
-            <span className="block font-display text-[10px] uppercase tracking-[0.3em] text-marine-foreground/60">Shipchandlers</span>
+            <span className="block font-display text-sm font-semibold uppercase tracking-[0.2em]">
+              Angelic
+            </span>
+            <span className="block font-display text-[10px] uppercase tracking-[0.3em] text-marine-foreground/60">
+              Shipchandlers
+            </span>
           </span>
         </Link>
 
@@ -42,7 +54,10 @@ export function Header() {
               key={n.to}
               to={n.to}
               className="relative font-display text-xs font-medium uppercase tracking-[0.18em] text-marine-foreground/80 transition-colors hover:text-marine-foreground"
-              activeProps={{ className: "!text-marine-foreground after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-signal" }}
+              activeProps={{
+                className:
+                  "!text-marine-foreground after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-signal",
+              }}
             >
               {n.label}
             </Link>
@@ -50,7 +65,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link to="/request-vessel-quote" className={`${btn({ size: "sm" })} hidden sm:inline-flex`}>
+          <Link
+            to="/request-vessel-quote"
+            className={`${btn({ size: "sm" })} hidden sm:inline-flex`}
+          >
             Request a Quote
           </Link>
           <button

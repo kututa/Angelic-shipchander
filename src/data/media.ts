@@ -17,7 +17,15 @@ export const media = {
 };
 
 export const heroSlides = [
-  { src: hero1, alt: "Container vessel arriving at the Port of Mombasa at sunset", caption: "Container vessel — Port of Mombasa" },
+  {
+    src: hero1,
+    alt: "Container vessel arriving at the Port of Mombasa at sunset",
+    caption: "Container vessel — Port of Mombasa",
+  },
   { src: hero2, alt: "Bulk carrier moored alongside a berth", caption: "Bulk carrier alongside" },
-  { src: hero3, alt: "Provisions being craned aboard a vessel at the quay", caption: "Vessel supply operation" },
+  {
+    src: hero3,
+    alt: "Provisions being craned aboard a vessel at the quay",
+    caption: "Vessel supply operation",
+  },
 ];
