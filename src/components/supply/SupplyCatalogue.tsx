@@ -35,7 +35,7 @@ export function SupplyCatalogue({ compact = false }: { compact?: boolean }) {
             >
               {c.title}
             </button>
-          ))}
+          ))}  
         </div>
         <label className="relative block md:w-80">
           <span className="sr-only">Search supplies</span>

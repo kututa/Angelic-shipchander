@@ -65,12 +65,12 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
+          {/* <Link
             to="/request-vessel-quote"
             className={`${btn({ size: "sm" })} hidden sm:inline-flex`}
           >
             Request a Quote
-          </Link>
+          </Link> */}
           <button
             className="grid h-10 w-10 place-items-center text-marine-foreground lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -103,9 +103,6 @@ export function Header() {
               <span className="font-display text-xs text-marine-foreground/40">0{i + 1}</span>
             </Link>
           ))}
-          <Link to="/request-vessel-quote" className={`${btn({ size: "lg" })} mt-8`}>
-            Request a Quote
-          </Link>
         </nav>
       </div>
     </header>
