@@ -6,13 +6,13 @@
 
 /*
  * Angelic Shipchandlers design system.
- * Palette: Deep Marine, Ocean, Seafoam, Sand, Warm White, Charcoal, Signal Orange.
- * Display: Futura (licensed file can be added via @font-face) -> Jost fallback. Body: Lato.
+ * Palette: Midnight violet, daylight blue, warm gold and ink.
+ * Display: Jost. Body: Inter / Work Sans fallback.
  */
 
 @theme inline {
-  --font-display: "Futura", "Futura PT", "Jost", ui-sans-serif, sans-serif;
-  --font-body: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Jost", ui-sans-serif, sans-serif;
+  --font-body: "Inter", "Work Sans", ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-body);
 
   --radius-sm: 2px;
@@ -52,50 +52,43 @@
 
 :root {
   --radius: 4px;
-  /* #F8F7F3 warm white */
-  --background: oklch(0.975 0.005 95);
-  /* #172126 charcoal */
-  --foreground: oklch(0.235 0.017 225);
-  --card: oklch(0.99 0.003 95);
-  --card-foreground: oklch(0.235 0.017 225);
-  --popover: oklch(0.99 0.003 95);
-  --popover-foreground: oklch(0.235 0.017 225);
-  /* #0B6073 ocean */
-  --primary: oklch(0.45 0.08 215);
-  --primary-foreground: oklch(0.975 0.005 95);
-  /* #DDF3F1 seafoam */
-  --secondary: oklch(0.95 0.025 185);
-  --secondary-foreground: oklch(0.27 0.05 225);
-  --muted: oklch(0.93 0.015 85);
-  --muted-foreground: oklch(0.47 0.02 225);
-  /* #E9DFCF sand */
-  --accent: oklch(0.91 0.025 80);
-  --accent-foreground: oklch(0.235 0.017 225);
+  --background: #ffffff;
+  --foreground: #1a1830;
+  --card: #ffffff;
+  --card-foreground: #1a1830;
+  --popover: #ffffff;
+  --popover-foreground: #1a1830;
+  --primary: #2d274b;
+  --primary-foreground: #ffffff;
+  --secondary: #eaeffe;
+  --secondary-foreground: #1a1830;
+  --muted: #eaeffe;
+  --muted-foreground: #514e63;
+  --accent: #e8b86d;
+  --accent-foreground: #1a1830;
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.86 0.015 85);
-  --input: oklch(0.82 0.015 85);
-  --ring: oklch(0.67 0.16 50);
+  --border: #d7dcef;
+  --input: #c7cde0;
+  --ring: #b07c32;
 
-  /* #092A38 deep marine */
-  --marine: oklch(0.27 0.05 225);
-  --marine-foreground: oklch(0.975 0.005 95);
-  --ocean: oklch(0.45 0.08 215);
-  --seafoam: oklch(0.95 0.025 185);
-  --sand: oklch(0.91 0.025 80);
-  /* #E87532 signal orange */
-  --signal: oklch(0.68 0.16 50);
-  --signal-foreground: oklch(0.2 0.03 225);
-  --line-dark: oklch(1 0 0 / 14%);
+  --marine: #2d274b;
+  --marine-foreground: #ffffff;
+  --ocean: #514a70;
+  --seafoam: #eaeffe;
+  --sand: #f7f8fc;
+  --signal: #e8b86d;
+  --signal-foreground: #1a1830;
+  --line-dark: rgb(255 255 255 / 20%);
 
   --overlay-hero: linear-gradient(
     100deg,
-    oklch(0.2 0.05 225 / 88%) 0%,
-    oklch(0.22 0.05 225 / 62%) 45%,
-    oklch(0.22 0.05 225 / 18%) 100%
+    rgb(26 24 48 / 76%) 0%,
+    rgb(26 24 48 / 28%) 55%,
+    rgb(26 24 48 / 0%) 100%
   );
-  --overlay-bottom: linear-gradient(to top, oklch(0.2 0.05 225 / 80%), transparent 60%);
-  --shadow-soft: 0 12px 40px -18px oklch(0.27 0.05 225 / 35%);
+  --overlay-bottom: linear-gradient(to top, rgb(26 24 48 / 42%), transparent 48%);
+  --shadow-soft: 0 12px 40px -18px rgb(26 24 48 / 28%);
 }
 
 @layer base {

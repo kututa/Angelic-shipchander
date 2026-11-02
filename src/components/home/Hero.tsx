@@ -39,7 +39,7 @@ export function Hero() {
             height={1088}
             loading={i === 0 ? "eager" : "lazy"}
             fetchPriority={i === 0 ? "high" : "auto"}
-            className={`h-full w-full object-cover object-[60%_center] ${i === active ? "animate-kenburns" : ""}`}
+            className={`h-full w-full object-cover object-[60%_center] brightness-110 ${i === active ? "animate-kenburns" : ""}`}
           />
         </div>
       ))}

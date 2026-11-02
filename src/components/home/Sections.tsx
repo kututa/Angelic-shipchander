@@ -34,7 +34,7 @@ export function CapabilityStrip() {
 
 export function AboutIntro() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="bg-sand py-24 md:py-32">
       <div className="container-site grid gap-12 md:grid-cols-12 md:gap-16">
         <Reveal className="md:col-span-7">
           <SectionHeading
@@ -137,7 +137,7 @@ export function ServiceRows({ withHeading = true }: { withHeading?: boolean }) {
 
 export function TechnicalStores() {
   return (
-    <section className="bg-sand">
+    <section className="bg-seafoam">
       <div className="grid md:grid-cols-2">
         <div className="relative min-h-[360px]">
           <img
@@ -175,7 +175,7 @@ export function PortOperations() {
         src={media.port}
         alt="Container vessel at the Port of Mombasa"
         loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover opacity-50"
+        className="absolute inset-0 h-full w-full object-cover opacity-65"
       />
       <div className="absolute inset-0 bg-overlay-hero" />
       <div className="container-site relative grid gap-12 py-28 md:grid-cols-12 md:py-40">
@@ -218,7 +218,7 @@ export function PortOperations() {
 export function SupplyProcess() {
   const { ref, inView } = useInView<HTMLOListElement>(0.3);
   return (
-    <section className="py-24 md:py-32">
+    <section className="bg-sand py-24 md:py-32">
       <div className="container-site">
         <SectionHeading eyebrow="How vessel supply works" title="From request to delivery." />
         <ol ref={ref} className="relative mt-16 grid gap-10 md:grid-cols-5 md:gap-6">
